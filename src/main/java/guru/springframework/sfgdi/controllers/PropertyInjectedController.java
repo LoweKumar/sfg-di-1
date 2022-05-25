@@ -12,7 +12,7 @@ import org.springframework.stereotype.Controller;
 public class PropertyInjectedController {
 
     @Qualifier("propertyInjectedGreetingService")
-    @Autowired
+    @Autowired //so this tells spring that i want to go ahead and inject an instance of the greeting service
     public GreetingService greetingService;
 
     public String getGreeting(){
